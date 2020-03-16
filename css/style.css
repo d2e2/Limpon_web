@@ -57,7 +57,14 @@ h1 {
 .page-stat .title-h2 {
     max-width: 500px;
 }
-
+.page-subscribe .title-h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.page-subscribe .title-h2 span {
+    font-size: 14px;
+}
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
@@ -184,8 +191,42 @@ height: 69px;
 .company-four {
     background-image: url(../picweb/company-4.png);
     flex-basis: 200px;
-    height: 69px;
+    height: 69px;   
     }
+.grid {
+    display: grid;
+    grid-template-areas: "a b c"
+                        "d b c"
+                        "d f g"
+                        "e f g"
+                        "e h h";
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.grid-title {
+    grid-area: a;
+}
+.grid-item-1 {
+    grid-area: b;
+}
+.grid-item-2 {
+    grid-area: c;
+}
+.grid-item-3 {
+    grid-area: d;
+}
+.grid-item-4 {
+    grid-area: e;
+}
+.grid-item-5 {
+    grid-area: f;
+}
+.grid-item-6 {
+    grid-area: g;
+}
+.grid-text {
+    grid-area: h;
+}
 .grid h2 {
     font-size: 40px;
     font-weight: 700;
@@ -195,15 +236,55 @@ height: 69px;
     color: #1085e4;
     display: block;
 }
+.grid-item {
+    text-align: center;
+    box-shadow: 0 0 5px #;
+}
 .grid-item h3 {
     color: #192b59;
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 18px;
 }
 .grid-item a {
     font-size: 14px;
     font-weight: 600;
     color: #1085e4;
+}
+.grid-icon {
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto 36px;
+}
+.grid-icon-1 {
+    background-image: url(../picweb/icon-1.png);
+    width: 54px;
+    height: 70px;
+}
+.grid-icon-2 {
+    background-image: url(../picweb/icon-2.png);
+    width: 70px;
+    height: 70px;
+}
+.grid-icon-3 {
+    background-image: url(../picweb/icon-3.png);
+    width: 55px;
+    height: 70px;
+}
+.grid-icon-4 {
+    background-image: url(../picweb/icon-4.png);
+    width: 70px;
+    height: 70px;
+}
+.grid-icon-5 {
+    background-image: url(../picweb/icon-5.png);
+    width: 73px;
+    height: 70px;
+}
+.grid-icon-6 {
+    background-image: url(../picweb/icon-6.png);
+    width: 74px;
+    height: 70px;
 }
 .list-stat {
     display: flex;
@@ -299,6 +380,46 @@ height: 69px;
 .box-price-item.active::after {
     display: none;
 }
+.box-subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-subscribe-text {
+    font-size: 18px;
+    max-width: 437px;
+}
+.box-subscribe-user {
+    position: relative;
+}
+.box-subscribe-child {
+    flex-basis: 49%;
+}
+.box-subscribe-user input {
+    border: 2px solid #3f5cb1;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 45px;
+    background-color: transparent;
+    padding: 25px 230px 25px 37px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.box-subscribe-user .btn-primary {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    padding: 17px 50px;
+}
+.box-subscribe-user input:focus, .box-subscribe-user .btn-primary {
+    outline: none;
+}
+.box-subscribe-user input::-webkit-input-placeholder {color:#b1c3ee;}
+.box-subscribe-user input::-moz-placeholder          {color:#b1c3ee;}/* Firefox 19+ */
+.box-subscribe-user input:-moz-placeholder           {color:#b1c3ee;}/* Firefox 18- */
+.box-subscribe-user input:-ms-input-placeholder      {color:#b1c3ee;}
+
 .page-header {
     background-image: url(../picweb/headerbg.png);
     background-size: cover;
@@ -326,7 +447,9 @@ height: 69px;
     padding: 116px 0 0 0;
 }
 .page-subscribe {
-    background: rgba(10,33,147,1);
+padding: 25px 0 28px 0;
+color: #fff;
+background: rgba(10,33,147,1);
 background: -moz-linear-gradient(-45deg, rgba(10,33,147,1) 0%, rgba(35,119,205,1) 100%);
 background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,33,147,1)), color-stop(100%, rgba(35,119,205,1)));
 background: -webkit-linear-gradient(-45deg, rgba(10,33,147,1) 0%, rgba(35,119,205,1) 100%);
