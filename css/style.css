@@ -38,6 +38,7 @@ h1 {
     font-weight: 600;
     color: #192b59;
     line-height: 1.2;
+    margin: 0;
 }
 .title-40 span {
     display: block;
@@ -118,6 +119,7 @@ h1 {
     text-transform: uppercase;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: 0.3s;
 }
 .btn-primary:hover {
     background-color: transparent;
@@ -153,6 +155,7 @@ h1 {
     text-transform: uppercase;
     background-color: transparent;
     border: 1px solid #dce1e5;
+    transition: 0.3s;
 }
 .btn-info:hover {
     color: #d0d2d7;
@@ -200,6 +203,8 @@ height: 69px;
                         "d f g"
                         "e f g"
                         "e h h";
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
     max-width: 1110px;
     margin: 0 auto;
 }
@@ -238,7 +243,7 @@ height: 69px;
 }
 .grid-item {
     text-align: center;
-    box-shadow: 0 0 5px #;
+    box-shadow: 0.1px 0.1px ;
 }
 .grid-item h3 {
     color: #192b59;
@@ -254,37 +259,33 @@ height: 69px;
 .grid-icon {
     background-repeat: no-repeat;
     display: block;
-    margin: 0 auto 36px;
+    height: 92px;
+    margin: 0 auto 21px;
+    background-position: center;
 }
 .grid-icon-1 {
     background-image: url(../picweb/icon-1.png);
-    width: 54px;
-    height: 70px;
+    background-size: 54px 70px;
 }
 .grid-icon-2 {
     background-image: url(../picweb/icon-2.png);
-    width: 70px;
-    height: 70px;
+    background-size: 70px 70px;
 }
 .grid-icon-3 {
     background-image: url(../picweb/icon-3.png);
-    width: 55px;
-    height: 70px;
+    background-size: 55px 70px;
 }
 .grid-icon-4 {
     background-image: url(../picweb/icon-4.png);
-    width: 70px;
-    height: 70px;
+    background-size: 70px 70px;
 }
 .grid-icon-5 {
     background-image: url(../picweb/icon-5.png);
-    width: 73px;
-    height: 70px;
+    background-size: 73px 70px;
 }
 .grid-icon-6 {
     background-image: url(../picweb/icon-6.png);
-    width: 74px;
-    height: 70px;
+    background-size: 74px 70px;
 }
 .list-stat {
     display: flex;
@@ -432,6 +433,9 @@ height: 69px;
     background-size: cover;
     background-repeat: no-repeat;
     padding:106px 0 99px;
+}
+.page-grid {
+    margin-top: 60px;
 }
 .page-stat, .page-screen {
     background-color: #edf6ff;
