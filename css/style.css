@@ -62,7 +62,7 @@ h1 {
     color: #fff;
     margin-top: 0;
     margin-bottom: 25px;
-}
+} 
 .page-subscribe .title-h2 span {
     font-size: 14px;
 }
@@ -106,7 +106,7 @@ h1 {
     width: 892px;
     height: 749px;
     position: absolute;
-    right: 0;
+    right: 50px;
     top: 189px;
 }
 .btn-primary {
@@ -170,7 +170,7 @@ h1 {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .list-company-item {
@@ -286,6 +286,10 @@ height: 69px;
 .grid-icon-6 {
     background-image: url(../picweb/icon-6.png);
     background-size: 74px 70px;
+}
+.page-software-icon {
+    display: block;
+    background-image: url();
 }
 .list-stat {
     display: flex;
